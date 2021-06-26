@@ -365,3 +365,6 @@ body {
 .main {
   padding-top: 10rem;
   padding-left: 300px; }
+
+.page {
+  overflow: hidden; }
