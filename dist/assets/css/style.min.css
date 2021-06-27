@@ -376,6 +376,11 @@ body {
 .sidebar__content {
   padding: 0 2rem; }
 
+.sidebar__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem; }
+
 .main {
   padding-top: 10rem;
   padding-left: 300px; }
@@ -427,3 +432,22 @@ body {
   margin: 0 .75rem; }
   .social__item:first-child {
     margin-left: 0; }
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.08em 2.08em;
+  font-size: 1.2rem;
+  border-radius: 2.08em;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-family: inherit;
+  line-height: 1.1;
+  background-color: #121212;
+  border: none;
+  cursor: pointer; }
+  .btn--red {
+    background-color: #ED3024; }
+  .btn--blue {
+    background-color: #3137C9; }
