@@ -1,7 +1,7 @@
 .btn {
   display: inline-block;
   vertical-align: top;
-  padding: 1.08em 2.08em;
+  padding: 1.08em 1.83em;
   font-size: 1.2rem;
   border-radius: 2.08em;
   text-decoration: none;
@@ -12,11 +12,19 @@
   background-color: $secondary;
   border: none;
   cursor: pointer;
+  transition: background-color  .2s linear;
 
   &--red {
+    box-shadow: 0 7px 17px -10px rgba($red, .2);
     background-color: $red;
+
+    @include hoverBtn(background-color, .2s, linear, $red, 10%)
   }
+
   &--blue {
+    box-shadow: 0 7px 17px -10px rgba($blue, .35);
     background-color: $blue;
+
+    @include hoverBtn(background-color, .2s, linear, $blue, 10%)
   }
 }

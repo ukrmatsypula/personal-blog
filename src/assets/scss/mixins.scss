@@ -1,0 +1,6 @@
+@mixin hoverBtn($transitionName, $duration, $animationType, $color, $percent) {
+  &:hover {
+    background-color: darken($color, $percent);
+    transition: $transitionName $duration $animationType;
+  }
+}
