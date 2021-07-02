@@ -2,6 +2,16 @@
   display: flex;
 }
 
+.nav__item {
+  position: relative;
+
+  &:hover {
+    > .subnav {
+      display: block;
+    }
+  }
+}
+
 .nav__link {
   display: block;
   font-size: 1.1rem;
@@ -13,6 +23,25 @@
   line-height: 1.2;
 
   @include hoverBtn(background-color, 0.2s, linear, $blue, 0%);
+
+  &.has-subnav {
+    position: relative;
+    padding-right: 3.3rem;
+
+    &:after {
+      content: "";
+      width: 10px;
+      height: 6px;
+      display: flex;
+      border-style: solid;
+      border-width: 6px 5px 0 5px;
+      border-color: $white transparent transparent transparent;
+      position: absolute;
+      top: 50%;
+      right: 1.1rem;
+      transform: translate(5px, -50%);
+    }
+  }
 }
 
 .header__right {
