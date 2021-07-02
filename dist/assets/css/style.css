@@ -534,6 +534,17 @@ body {
     color: rgba(255, 255, 255, 0.4);
 }
 
+.stories {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 19.5rem;
+    grid-column-gap: 1.3rem;
+}
+
+.stories__item {
+    background-color: #D2D2D2;
+}
+
 .sidebar {
     width: 300px;
     height: 100vh;

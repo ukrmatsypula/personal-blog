@@ -17,6 +17,7 @@ const notify = require("gulp-notify");
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
 const browserSync = require("browser-sync").create();
+const cache = require("gulp-cache");
 
 
 /* Paths */
@@ -209,6 +210,9 @@ function images(cb) {
                 ]
             })
         ]))
+        .pipe(cache(imagemin({
+          interlaced: true
+        })))
         .pipe(dest(path.build.images))
         .pipe(browserSync.reload({stream: true}));
 
