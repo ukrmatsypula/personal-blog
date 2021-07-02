@@ -9,7 +9,8 @@
   color: $white;
   text-decoration: none;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  padding: 1.5rem;
+  padding: 1.35rem;
+  line-height: 1.2;
 
   @include hoverBtn(background-color, 0.2s, linear, $blue, 0%);
 }
