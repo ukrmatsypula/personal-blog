@@ -769,3 +769,30 @@ body {
     transition: background-color 0.2s linear; }
     .btn--blue:hover {
       background-color: #272ca0; }
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem; }
+
+.pagination__item {
+  margin: 0 0.5rem; }
+
+.pagination__link {
+  display: block;
+  text-align: center;
+  font-size: 1.4rem;
+  width: 4rem;
+  height: 4rem;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color 0.2s linear;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  line-height: 4rem; }
+  .pagination__link:hover {
+    background-color: #333333; }
+  .pagination__link.active {
+    background-color: #3137C9;
+    box-shadow: 0 0 10px rgba(49, 55, 201, 0.15); }
