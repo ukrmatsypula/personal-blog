@@ -753,11 +753,11 @@ body {
 }
 
 .post__header {
-    margin: -2.5rem -2.5rem 2.5rem;
+    margin: 0 0 2.5rem;
 }
 
-.post__header--video {
-    margin: 0 0 2.5rem;
+.post__header--preview {
+    margin: -2.5rem -2.5rem 2.5rem;
 }
 
 .post__preview {
@@ -783,6 +783,36 @@ body {
 
 .post__title a:hover {
     text-decoration: underline;
+}
+
+.post__title--mb0 {
+    margin-bottom: 0;
+}
+
+.post__actions {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0.5rem;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.post__actions a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6;
+    transition: opacity 0.2s linear;
+}
+
+.post__actions a:hover {
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.post__actions-icon {
+    margin-left: 0.5rem;
 }
 
 .post__text {

@@ -647,10 +647,45 @@ body {
   .post__actions-icon {
     margin-left: 0.5rem; }
 
+.post__description {
+  font-size: 1.4rem;
+  color: #D2D2D2; }
+
 .post__text {
   font-size: 1.4rem;
-  color: #D2D2D2;
+  color: #ffffff;
   margin-bottom: 2rem; }
+  .post__text h2,
+  .post__text h3,
+  .post__text h4,
+  .post__text h5,
+  .post__text h6 {
+    margin-bottom: 2rem;
+    font-weight: 700; }
+  .post__text h2 {
+    font-size: 1.5em; }
+  .post__text h3 {
+    font-size: 1.25em; }
+  .post__text h4 {
+    font-size: 1.15em; }
+  .post__text h5,
+  .post__text h6 {
+    font-size: 1em; }
+  .post__text ul,
+  .post__text ol {
+    margin-bottom: 2rem; }
+  .post__text ol {
+    list-style: decimal;
+    list-style-position: inside; }
+  .post__text table {
+    width: 100%;
+    margin-bottom: 2rem; }
+  .post__text p {
+    margin-bottom: 2rem; }
+  .post__text img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
 
 .post__data {
   display: flex;
