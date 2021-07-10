@@ -115,14 +115,14 @@
     list-style-position: inside;
   }
 
-   a {
-     color: $blue;
-     text-decoration: none;
+  a {
+    color: $blue;
+    text-decoration: none;
 
-     &:hover {
-       text-decoration: underline;
-     }
-   }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   table {
     width: 100%;
