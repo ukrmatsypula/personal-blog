@@ -27,4 +27,12 @@
 
     @include hoverBtn(background-color, .2s, linear, $blue, 10%)
   }
+
+  &--rounded {
+    border-radius: 5px;
+  }
+
+  &--sm {
+    padding: 0.7em 1.25em;
+  }
 }
