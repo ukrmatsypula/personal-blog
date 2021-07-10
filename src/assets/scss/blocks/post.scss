@@ -76,6 +76,8 @@
   font-size: 1.4rem;
   color: $white;
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #1c1c1c;
 
   h2,
   h3,
@@ -112,6 +114,15 @@
     list-style: decimal;
     list-style-position: inside;
   }
+
+   a {
+     color: $blue;
+     text-decoration: none;
+
+     &:hover {
+       text-decoration: underline;
+     }
+   }
 
   table {
     width: 100%;
