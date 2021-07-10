@@ -92,7 +92,7 @@ title: Personal Blog | Post
       </p>
     </div>
     <div class="related">
-      <h3 class="related__title">Интересно почитать</h3>
+      <h3 class="post__subtitle">Интересно почитать</h3>
 
       <ul class="related__list">
         <li class="related__list-item">
@@ -136,20 +136,81 @@ title: Personal Blog | Post
       </ul>
     </div>
 
-    <div class="comments">
-      <h3 class="copmments__title">Обсуждение</h3>
-      <form class="form" action="/" method="POST">
-        <div class="form__group">
-          <textarea
-            class="form__control form__control--textarea"
-            name="comment-text"
-            placeholder="Текст комментария"
-          ></textarea>
-          <span class="form__line"></span>
+    <h3 class="post__subtitle">Обсуждение</h3>
+    <form class="form" action="/" method="POST">
+      <div class="form__group">
+        <textarea
+          class="form__control form__control--textarea"
+          name="comment-text"
+          placeholder="Текст комментария"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+
+      <button class="btn btn--sm btn--blue btn--rounded" type="submit">
+        Отправтиь
+      </button>
+    </form>
+
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="assets/images/me.jpg" alt="" />
+          <div class="comments__author">
+            <div class="comments__name">Роман Мацыпула</div>
+            <time class="comments__pubdate" datetime="20-12-21 19:21"
+              >1 неделю назад</time
+            >
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          molestiae repellat labore eligendi inventore sed laboriosam! Ea enim
+          eligendi alias cupiditate adipisci, iste sed corrupti?
+          <button class="comments__reply" type="button">ответить</button>
         </div>
 
-        <button class="btn btn--sm btn--blue btn--rounded" type="submit">Отправтиь</button>
-      </form>
-    </div>
+        <ul class="comments">
+          <li class="comments__item">
+            <div class="comments__header">
+              <img
+                class="comments__avatar"
+                src="assets/images/posts/post-image-1.jpg"
+                alt=""
+              />
+              <div class="comments__author">
+                <div class="comments__name">Джонни</div>
+                <time class="comments__pubdate" datetime="20-12-21 19:21"
+                  >1 неделю назад</time
+                >
+              </div>
+            </div>
+            <div class="comments__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+              molestiae repellat labore eligendi inventore sed laboriosam! Ea
+              enim ?
+              <button class="comments__reply" type="button">ответить</button>
+            </div>
+          </li>
+        </ul>
+      </li>
+      <li class="comments__item">
+        <div class="comments__header">
+          <img class="comments__avatar" src="assets/images/me.jpg" alt="" />
+          <div class="comments__author">
+            <div class="comments__name">Роман Мацыпула</div>
+            <time class="comments__pubdate" datetime="20-12-21 19:21"
+              >1 неделю назад</time
+            >
+          </div>
+        </div>
+        <div class="comments__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+          molestiae repellat labore eligendi inventore sed laboriosam! Ea enim
+          eligendi alias cupiditate adipisci, iste sed corrupti?
+          <button class="comments__reply" type="button">ответить</button>
+        </div>
+      </li>
+    </ul>
   </div>
 </article>
